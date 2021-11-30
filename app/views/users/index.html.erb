@@ -1,0 +1,22 @@
+<h1>
+  Create your account
+</h1>
+<%= form_for @users do |form_field| %>
+  <%= form_field.label :username %>
+  <%= form_field.text_field :username %>
+  <br />
+  <%= form_field.label :first_name %>
+  <%= form_field.text_field :first_name %>
+  <br />
+  <%= form_field.label :last_name %>
+  <%= form_field.text_field :last_name %>
+  <br />
+  <%= form_field.label :email %>
+  <%= form_field.email_field :email %>
+  <br />
+  <%= form_field.label :password %>
+  <%= form_field.password_field :password %>
+  <br />
+  <br />
+  <%= form_field.submit %>
+<% end %>
